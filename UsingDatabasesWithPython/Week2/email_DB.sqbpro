@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="D:/M Salem Younes/CS/Study/Python/PythonMSA/UsingDatabasesWithPython/Week2/email_DB.sqlite" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="198"/><column_width id="1" width="0"/><column_width id="2" width="91"/><column_width id="3" width="296"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,6:mainCounts"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Counts" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="210"/><column index="2" value="45"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">DELETE FROM Ages;
+INSERT INTO Ages (name, age) VALUES ('Doire', 14);
+INSERT INTO Ages (name, age) VALUES ('Atika', 29);
+INSERT INTO Ages (name, age) VALUES ('Fathema', 29);
+INSERT INTO Ages (name, age) VALUES ('Danika', 25);
+INSERT INTO Ages (name, age) VALUES ('Jock', 19);
+INSERT INTO Ages (name, age) VALUES ('Xue', 14);</sql><sql name="SQL 2">SELECT hex(name || age) AS X FROM Ages ORDER BY X</sql><sql name="SQL 3">UPDATE User SET name=&quot;Ali&quot; WHERE email=&quot;ali.com&quot;</sql><sql name="SQL 4">SELECT * from User ORDER by name</sql><sql name="SQL 5">SELECT COUNT(*) FROM User</sql><sql name="SQL 6">CREATE TABLE Ages ( 
+  name VARCHAR(128), 
+  age INTEGER
+)</sql><current_tab id="1"/></tab_sql></sqlb_project>
