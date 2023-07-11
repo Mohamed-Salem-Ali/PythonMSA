@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/71960626/trying-to-install-cartopy-but-keep-getting-this-getting-requirements-to-build
