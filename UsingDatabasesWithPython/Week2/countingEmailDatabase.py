@@ -43,7 +43,11 @@ fh = open(fname)
 for line in fh:
     if not line.startswith('From: '): continue
     pieces = line.split()
-    org = pieces[1]
+    email = pieces[1]
+    parts = email.split('@')
+    org = parts[-1]
+    print (org)
+    
     cur.execute('SELECT count FROM Counts WHERE org = ? ', (org,))
     row = cur.fetchone()
     if row is None:
