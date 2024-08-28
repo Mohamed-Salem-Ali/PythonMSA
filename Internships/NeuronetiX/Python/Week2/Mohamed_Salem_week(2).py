@@ -139,14 +139,40 @@ else:
 print("-" * 80) 
 #---------------------------------------------------------------------------------------
 # Advanced 2
-
-
+# a = 0 , b = 1 10 numbers
+# 0 , 1, 1, 2,3,5,8,13,21,34,55,89...........
+a,b = 0, 1
+count=0
+sequence=[]
+while count<20:
+    sequence.append(a)
+    next_number = a+b
+    a=b
+    b=next_number
+    count+=1
+print(sequence)
 
 print("-" * 80) 
 #---------------------------------------------------------------------------------------
 # Advanced 3
-
-
-
+#prime number 
+#check numbers less equal 1 
+#check number equal 2
+#check numbers even
+#check odd numbers divisible by itself and 1 only
+numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+prime_numbers=[]
+for num in numbers:
+    if num > 1:
+        is_prime = True
+        for i in range(2, num):
+            if num % i == 0:
+                is_prime = False
+                break
+        if is_prime:
+            prime_numbers.append(num)
+    
+print(prime_numbers)
 print("-" * 80) 
 #---------------------------------------------------------------------------------------
+    
