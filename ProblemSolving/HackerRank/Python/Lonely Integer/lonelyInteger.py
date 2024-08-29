@@ -29,7 +29,10 @@ def lonelyintegerMath(a):
    sum_of_list = sum(a)
    return sum_of_set*2-sum_of_list
 
-def lonelyintegerShort(a): for x in a: if a.count(x) == 1 : return x
+def lonelyintegerShort(a): 
+    for x in a: 
+        if a.count(x) == 1 : 
+            return x
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 

@@ -15,7 +15,6 @@ import sys
 
 def countingSort(arr):
     # Write your code here
-    temp=arr
     x=[0 for x in range(100)]
     for i in arr:
         x[i]+=1
