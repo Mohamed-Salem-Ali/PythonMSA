@@ -119,6 +119,14 @@ print("-" * 80)
 """
 print("Intermediate 2")
 
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+    
+print(factorial(5))
+
 
 
 
@@ -137,6 +145,15 @@ print("-" * 80)
 """
 print("Intermediate 3")
 
+numbers=[20,30,40,5,156,77,55,46]
+def calculate_statistics(x):
+    print("Scores :",x)
+    print("The highest Score :",max(x))
+    print("The Lowest Score :",min(x))
+    print("The Average Score :",sum(x)//len(x))
+
+calculate_statistics(numbers)
+    
 
 
 
