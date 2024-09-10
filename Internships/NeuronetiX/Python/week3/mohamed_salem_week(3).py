@@ -172,7 +172,22 @@ print("-" * 80)
 """
 print("Advanced 1")
 
+def is_positive(number):
+    return number > 0
 
+def filter_and_apply(numbers, func):
+    filtered_numbers = filter(is_positive, numbers)
+    result = list(map(func, filtered_numbers))
+    return result
+
+def square(x):
+    return x ** 2
+
+numbers = [-5, 3, 0, -1, 4, 2]
+
+modified_list = filter_and_apply(numbers, square)
+
+print(modified_list)
 
 
 #---------------------------------------------------------------------------------------
@@ -189,7 +204,14 @@ print("-" * 80)
 """
 print("Advanced 2")
 
+def reverse_string(s):
+    if len(s) <= 1:
+        return s
+    return s[-1] + reverse_string(s[:-1])
 
+string = "Mohamed Salem Younes"
+reversed_string = reverse_string(string)
+print(reversed_string)
 
 
 #---------------------------------------------------------------------------------------
@@ -208,7 +230,23 @@ print("-" * 80)
 """
 print("Advanced 3")
 
+def binary_search(arr, target):
 
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] > target:
+            right = mid - 1
+        else:
+            left = mid + 1
+    return -1
+
+numbers = [1, 3, 5, 7, 9, 11, 13]
+target = 7
+result = binary_search(numbers, target)
+print(f"Index of {target}: {result}")
 
 
 #---------------------------------------------------------------------------------------
